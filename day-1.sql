@@ -69,4 +69,4 @@ when day_8 >= 3 then '1'
 when day_10 >= 2 then '2'
 end as criterian
 from my_cte 
-
+order by emp_id

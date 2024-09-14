@@ -1,5 +1,5 @@
 -- PROBLEM STATEMENT:
--- DAY 2
+-- DAY 3
 
 -- TRENDING PRODUCTS
 -- Amazon wants to find out the trending products for

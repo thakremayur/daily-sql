@@ -1,5 +1,5 @@
 -- PROBLEM STATEMENT:
--- DAY 2
+-- DAY 2 (LIFT OVERLOADED PART 2)
 
 -- You are given a table of list of lifts , 
 -- their maximum capacity and people along with their weight and gender who wants to enter into it. 

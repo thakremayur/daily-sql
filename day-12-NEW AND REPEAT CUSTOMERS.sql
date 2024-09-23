@@ -40,3 +40,17 @@ EXPECTED OUTPUT:
 +-------------+---------------+------------------+
 
 */
+
+select * from ps_9_Orders;
+
+with my_cte as (
+select *,
+min(order_date) over(partition by customer_id order by order_date) as first_order 
+from ps_9_Orders
+)
+select
+order_date,
+sum(case when order_date = first_order then 1 else 0 end) as new_customer,
+sum(case when order_date > first_order then 1 else 0 end) as repeat_customer
+from my_cte
+group by order_date
